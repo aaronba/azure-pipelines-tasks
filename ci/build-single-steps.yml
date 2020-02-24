@@ -1,5 +1,8 @@
 steps:
 
+pool:
+  vmImage: 'ubuntu-latest'
+
 # Clean
 - checkout: self
   clean: true
