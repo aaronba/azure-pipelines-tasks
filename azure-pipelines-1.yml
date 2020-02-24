@@ -1,0 +1,13 @@
+trigger:
+- master
+- releases/*
+
+jobs:
+
+# Single task
+- job: buildSingle
+  displayName: Build single task
+  condition: variables.task)
+  steps:
+  - template: ci/build-single-steps.yml
+
