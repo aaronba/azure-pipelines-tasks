@@ -25,7 +25,7 @@ steps:
 
 # Stage hotfix
 - script: node ./ci/stage-hotfix.js
-  condition: and(succeeded(), eq(variables.os, 'Windows_NT'))
+  condition: and(succeeded(), eq(variables.os, 'Windows_NT1'))
   displayName: Stage hotfix
 
 # Publish hotfix artifact
